@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block title %}Notes! |{% endblock title %}
+
+{% block body %}
+
+<div class="head bg-light">
+<h1 class="my-1 text-center  text-decoration-underline" style="color: purple">Quick View</h1>
+</div>
+
+
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+    {% for Note in allnotes %}
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://source.unsplash.com/1600x900/?{{Note.image}}">
+
+                <div class="card-body">
+                  <h3 class="text-center">{{Note.head}}</h3>
+                  -------------------------------------------
+                  <h3 class="text-center">{{Note.strap}}</h3>
+                  
+                  <p class="text-center"><b>
+                    {{Note.desc}}
+                  </b></p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href="{{Note.link}}" target=”_blank”>View</a></button>
+                      
+                    </div>
+                    <small class="text-muted">Updated: {{Note.date}}</small>
+                    
+                  </div>
+                </div>
+              </div>
+          </div>
+          {% endfor %}
+</div>
+
+
+{% endblock body %}

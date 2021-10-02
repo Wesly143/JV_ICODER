@@ -1,0 +1,139 @@
+{% extends 'base.html' %}
+
+{% block title %}Home |{% endblock title %}
+
+{% block body %}
+
+<div class="container-fluid px-0 bg-dark" >
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="../static/np1.jpg"  class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block bg-dark" style=" border-radius: 100px">
+        <h5 style="color: #ed3b13; text-decoration: underline; font-size: 50px; font-family: cooper ">Learn Programming!</h5>
+        <p>Get a huge collection of programming cheatsheets!</p>
+      </div>
+        </div>
+
+        <div class="carousel-item">
+        <img src="../static/np2.jpg" class="d-block w-100" alt="...">
+        
+          <div class="carousel-caption d-none d-md-block bg-dark" style=" border-radius: 100px">
+        <h5 style="color: magenta; text-decoration: underline; font-size: 50px; font-family: cooper ">WELCOME TO iCODER!</h5>
+        <p>Welcome to our multi-purpose Website!</p>
+      </div>
+        </div>
+        <div class="carousel-item">
+        <img src="../static/np3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block bg-dark" style=" border-radius: 100px">
+        <h5 style="color: #13c5ed; text-decoration: underline; font-size: 50px; font-family: cooper ">Get All Study Notes</h5>
+        <p>Dear friends, Get your all notes from our SITE!!</p>
+      </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+</div>
+
+<h1 class="text-center text-decoration-underline mu-4 mb-4">Dashboard</h1>
+
+<div class="container">
+  <div class="row" data-masonry="{&quot;percentPosition&quot;: true }" style="position: relative; height: 690px;">
+    <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 0px;">
+      <div class="card">
+        <img src="../static/MAN.jpg" alt="">
+
+        <div class="card-body">
+          
+          <p class="card-text">We do keep a huge number of movies, which can be downloaded and streamed as well</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-4 mb-4 bg-danger" style="position: absolute; left: 33.3333%; top: 0px;">
+      <div class="card p-3 bg-danger br-50 ">
+        <figure class="p-3 mb-0">
+          <blockquote class="blockquote">
+            <p style="color: white">“Knowledge is power.”</p>
+          </blockquote>
+          <figcaption class="blockquote-footer mb-0 text-muted" style="color: white"> 
+            qoute from <cite title="Source Title"> Francis Bacon</cite>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 66.6667%; top: 0px;">
+      <div class="card">
+        <img src="../static/math.jpg" alt="">
+
+        <div class="card-body">
+          <h5 class="card-title" style="text-color: lightgreen">Study Notes</h5>
+          <p class="card-text">Get your desired notes from us, available 24 hours.
+            NOTE: The notes are always gets updated, and this site as well :)
+          </p>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 33.3333%; top: 171px;">
+      <div class="card bg-primary text-white text-center p-3">
+        <figure class="mb-0">
+          <blockquote class="blockquote">
+            <p><B>WELCOME TO iCODER</B></p>
+          </blockquote>
+          <figcaption class="blockquote-footer mb-0 text-white">
+            Developed and Designed by<cite title="Source Title"> Wesly Costa</cite>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 33.3333%; top: 310px;">
+      <div class="card text-center">
+        <div class="card-body">
+          <h5 class="card-title" style="text-color: lightgreen">Contact US!</h5>
+          <p class="card-text">Contact Us and let us know our website related problems...</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 362px;">
+      <div class="card">
+        <img src="../static/logo.jpeg" height="300px" alt="">
+
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-4 mb-4 bg-success" style="position: absolute; left: 66.6667%; top: 378px;">
+      <div class="card p-3 text-end">
+        <figure class="mb-0">
+          <blockquote class="blockquote">
+            <p>“Simplicity is the soul of efficiency.”</p>
+          </blockquote>
+          <figcaption class="blockquote-footer mb-0 text-muted">
+            Qoute from <cite title="Source Title"> – Austin Freeman</cite>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 33.3333%; top: 488px;">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">CheatSheets!</h5>
+          <p class="card-text">You also get  vast number of cheatsheets for learning programming languages.
+            Note: The cheat sheet site redirects to code with harry site, 
+            (HARRY is a full stack programmer, used to teach us programming)
+          </p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+{% endblock body %}
